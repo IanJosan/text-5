@@ -1,7 +1,9 @@
 <template>
     <div class="manyNews">
-        <div class="newsPicture"></div>
-        <p>123qeqeqeweqeqessdsadasdsaeqqeqe1</p>
+        <div class="newsPicture">
+            <img src="~@/assets/js.jpg" alt="">
+        </div>
+        <p>Lorem ipsum dolor sit adipisicing elit. </p>
     </div>
 </template>
 
@@ -25,7 +27,10 @@ export default {
     height: 65px;
     background-color: purple;
 }
-
+.newsPicture img {
+    width: 100%;
+    height: 100%;
+}
 p {
     width: 150px;
     height:  65px;

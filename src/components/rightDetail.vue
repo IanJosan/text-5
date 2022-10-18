@@ -3,7 +3,9 @@
     <div class="topLogin">
         <div class="inner">
             <button><router-link to="/login">退出登录</router-link></button>
-            <div class="usePicture"></div>
+            <div class="usePicture">
+                <img src="~@/assets/itcast.jpeg" alt="">
+            </div>
             <span class="user">用户：1234567</span>
         </div>
     </div>
@@ -11,10 +13,7 @@
         <h3>博学谷新闻</h3>
         <hr/>
         <div class="manyNews">
-            <manyNews/>
-            <manyNews/>
-            <manyNews/>
-
+            <manyNews v-for="i in 10" :key="i"/>
         </div>
         <!-- news -->
     </div>
@@ -63,6 +62,9 @@ padding: 20px;
     margin: auto;
     border-radius: 50%;
     background-color: pink;
+}
+.usePicture img {
+    width: 100%;
 }
 .user {
     display: flex;
